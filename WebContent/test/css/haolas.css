@@ -1,0 +1,191 @@
+@CHARSET "UTF-8";
+/* 清除样式 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*设置最外面包裹层，使其在网页中居中显示，并设置背景图片*/
+.wrap{
+    margin: 0 auto;
+    width: 1100px;
+    /* background-image: url("WebContent/test/images/background/background.jpg"); */
+}
+
+/* 设置网页头部header的样式 */
+.header{
+	width: 1100px;
+	height: 140px;
+	/* background-color: #F0F8FF; */
+}
+
+/* 设置logo图片样式 */
+.header img{
+	float: left;
+	margin: 10px 20px 0px 30px;
+}
+
+/* 设置菜单栏的样式 */
+.header li{
+	float: left;	/* 使得菜单左对齐，横向排列 */
+	list-style-type: none;  /*清楚无序列表前面的小圆圈*/
+	margin: 70px 18px 30px 18px;
+	/* 设置菜单的背景颜色，以及形状 */
+	padding: 10px 10px 0px 10px;
+    border-radius: 20px 20px 0 0;	/* 设置菜单背景形状，带有圆弧 */
+    -webkit-border-radius: 20px 20px 0 0;     /*chrome and safari*/
+    -moz-border-radius: 20px 20px 0 0;        /*firefox*/
+    -ms-border-radius: 20px 20px 0 0;         /*IE*/
+    -o-border-radius: 20px 20px 0 0;          /*opera*/
+    background-color: #77aaff;
+}
+
+/* 设置菜单文字的样式 */
+.header a{
+    display: block;
+    text-decoration: none;
+    font-family: 宋体;
+    font-size: 22px;
+}
+
+/*设置超链接样式*/
+a:link{
+    color: #000;    /*定义未被访问的链接的字体为黑色*/
+    text-decoration: none;
+}
+a:visited{
+    color: #000;    /*定义已经被访问的链接的字体为黑色*/
+    text-decoration: none;
+}
+a:hover{
+    color: #f00;    /*定义鼠标移到超链接的字体为红色*/
+    text-decoration: none;
+}
+a:active{
+    color: #f00;    /*定义正在被访问的超链接的字体为红色*/
+    text-decoration: none;
+}
+
+/* 设置网页中间main部分的样式 */
+.main{
+	width: 1100px;
+	height: 370px;
+	position: relative;
+}
+
+.main ul {
+    /* position: relative; */
+    width: 1100px;
+    height: 370px;
+}
+
+/* 设置li标签中内容的样式 */
+.main li {
+	/* background-color: pink; */
+	width: 500px;
+    height: 370px;
+	list-style-type: none;  /* 清楚无序列表前面的小圆圈 */
+	position: absolute;		/* 元素绝对定位，以父元素为参照进行偏移 */
+    z-index: 0;		
+ 	top: 0px;
+ 	left: 0px;      
+    cursor: pointer;
+    /* border-radius: 6px; */		/* 设置菜单背景形状，带有圆弧 */	
+    /* box-shadow: 5px 5px 12px rgba(200, 200, 200, 0.5); */
+}
+
+/* 设置中间轮播图片的样式 */
+.main img {
+	display: block;
+	/* 设置图片的高度和宽度 */
+    width: 500px;
+    height: 370px;
+    border: 2px solid #77aaff;
+    margin-left: 300px;		/* 图片距离左侧250px,正好使得图片居中显示 */
+    background: url(images/RollPicture/loading.gif) no-repeat center 50%;
+    /* vertical-align: text-top; */   /* 垂直对齐图片 */
+    /*圆角边框*/
+    border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;     /*chrome and safari*/
+    -moz-border-radius: 20px 20px 20px 20px;        /*firefox*/
+    -ms-border-radius: 20px 20px 20px 20px;         /*IE*/
+    -o-border-radius: 20px 20px 20px 20px;          /*opera*/
+    /*边框阴影*/
+    /* box-shadow: 2px 2px 2px #f00;
+    -webkit-box-shadow: 2px 2px 2px #f00;     chrome and safari
+    -moz-box-shadow: 2px 2px 2px #f00;        firefox
+    -ms-box-shadow: 2px 2px 2px #f00;         IE
+    -o-box-shadow: 2px 2px 2px #f00;          opera */
+    
+}
+
+/* 设置显示按钮区域的样式 */
+.main .prev, .main .next {
+	/* background-color: #FFBBFF; */
+    display: block;
+    z-index: 100;	/* 显示在最上层，在图片的上层  */   
+    cursor: pointer;
+    position: absolute;
+    top: 150px;		/* 绝对定位偏移父元素顶部150px */
+   /*  该区域长宽为52px,只显示这么大，溢出的部分隐藏 */
+    width: 52px;
+    height: 52px;
+    overflow: hidden;	/* 只显示一小部分图片，其余溢出的图片隐藏   */ 
+}
+
+/* 设置左边区域按钮的样式 */
+.main .prev {
+	background-image: url("../images/RollPicture/btn.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    /* background-attachment: fixed; */
+    left: 10px;
+}
+
+/* 设置右边区域按钮的样式 */
+.main .next {
+	background-image: url("../images/RollPicture/btn.jpg");
+	background-repeat: no-repeat;
+    background-position: right bottom;
+    /* background-attachment: fixed; */
+    right: 10px;
+}
+
+/* 设置当鼠标划过左边区域时按钮的样式 */
+.main .prev:hover {
+    background-position: left top;
+}
+
+/* 设置当鼠标划过右边区域时按钮的样式 */
+.main .next:hover {
+    background-position: right top;
+} 
+
+
+/*设置footer部分样式*/
+.footer{
+	margin-top: 20px;
+    padding-top: 10px;
+    width: 1100px;
+    height: 90px;
+    line-height: 1.5;
+    font-family: 宋体;
+    color: #000;
+    font-size: 18px;
+    /*文本居中*/
+    text-align: center;
+    -webkit-text-align: center;     /*chrome and safari*/
+    -moz-text-align: center;        /*firefox*/
+    -ms-text-align: center;         /*IE*/
+    -o-text-align: center;          /*opera*/
+    /*背景颜色*/
+    background-color: #77aaff;
+    -webkit-background-color: #77aaff;     /*chrome and safari*/
+    -moz-background-color: #77aaff;        /*firefox*/
+    -ms-background-color: #77aaff;         /*IE*/
+    -o-background-color: #77aaff;          /*opera*/
+}
+
+
+
+

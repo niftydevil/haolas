@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+/*清除样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*设置网页自动居中*/
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*位内容区域设置样式*/
+.content{
+    margin-top: 30px;
+    width: 940px;
+    /*设置边框，才能设置边框图片,不用透明transparent，用颜色，当不能显示边框图片时，显示边框颜色*/
+    border:30px solid #77aaff;      
+    -webkit-border:30px solid #77aaff;     /*chrome和safari*/
+    -moz-border:30px solid #77aaff;       /*firefox*/
+    -ms-border:30px solid #77aaff;        /*IE*/
+    -o-border:30px solid #77aaff;         /*opera*/
+    /* 设置边框图片，当不支持边框图片时，显示边框颜色，在3D模型中，图片在颜色的上层 */
+    border-image: url("../images/logo/logo-border.jpg") 112 141 112 141 round;
+    -webkit-border-image: url("../images/logo/logo-border.jpg") 112 141 112 141 round;     /*chrome和safari*/
+    -moz-border-image: url("../images/logo/logo-border.jpg") 112 141 112 141 round;       /*firefox*/
+    -ms-border-image: url("../images/logo/logo-border.jpg") 112 141 112 141 round;        /*IE*/
+    -o-border-image: url("../images/logo/logo-border.jpg") 112 141 112 141 round;         /*opera*/
+}
+
+/*设置标题样式*/
+.title{
+    text-align: center;
+    font-family: 华文行楷;
+    font-size: 38px;
+    color: blue;
+    text-shadow: 3px 3px 5px orange;
+}
+/*设置文本内容样式*/
+p{
+    text-indent: 40px;
+    font-family: 华文楷体;
+    font-size: 18px;
+    line-height: 1.25;
+}

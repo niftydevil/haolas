@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+/*清除样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*设置网页居中*/
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*设置文字样式*/
+p{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-family: 华文行楷;
+    font-size: 60px;
+    color: #0000ff;
+    text-shadow: 5px 5px 5px red;
+    -webkit-text-shadow: 5px 5px 5px red;     /*chrome and safari*/
+    -moz-text-shadow: 5px 5px 5px red;        /*firefox*/
+    -ms-text-shadow: 5px 5px 5px red;         /*IE*/
+    -o-text-shadow: 5px 5px 5px red;          /*opera*/
+}
+
+/*设置图片位置*/
+img{
+    margin-top: 80px;
+    margin-left: 230px;
+}

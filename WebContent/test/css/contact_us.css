@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+/*清除样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*设置网页居中*/
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*设置logo图片大小*/
+.picture1{
+    margin-top: 20px;
+    margin-bottom: 8px;
+    width: 1000px;
+    height: 300px;
+}
+
+/*设置文字为左浮动，是的文字与图片显示为纵向两列*/
+.content{
+    width: 800px;   /*设置内容区域的宽度为800像素+图片200像素正好等于网页的宽度1000像素*/
+    height: 300px;
+    float: left;
+    /*设置文字样式*/
+    font-family: 楷体;
+    font-size: 20px;
+    line-height: 1.25;
+}
+/*设置标题，title的样式*/
+.title{
+    font-family: 楷体;
+    font-size: 25px;
+    color: #0000ff;
+}
+
+
+/*设置二维码大小*/
+.picture2{
+    width: 200px;
+    height: 200px;
+}

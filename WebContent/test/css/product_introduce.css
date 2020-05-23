@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+/*清除样式*/
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/*设置网页居中*/
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*设置图片样式*/
+img{
+    margin: 0px;
+    padding-top: 20px;
+    width: 1000px;
+    height: 180px;
+}
+
+ul{
+    list-style:none;
+    height:238px;
+    float: left;
+}
+li{
+    padding:0px 15px;
+    height:34px;
+    width: 80px;
+    line-height:34px;
+    margin-right:5px;
+    /*设置边框样式*/
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;     /*chrome and safari*/
+    -moz-border-radius: 10px 10px 10px 10px;        /*firefox*/
+    -ms-border-radius: 10px 10px 10px 10px;         /*IE*/
+    -o-border-radius: 10px 10px 10px 10px;          /*opera*/
+    cursor:pointer;
+}
+.on{
+    /*设置边框样式*/
+    border:1px solid #ccc;
+    /*边框阴影*/
+    box-shadow: 2px 2px 5px blue inset,2px 2px 5px blue;
+    -webkit-box-shadow: 2px 2px 5px blue inset,2px 2px 5px blue;     /*chrome and safari*/
+    -moz-box-shadow: 2px 2px 5px blue inset,2px 2px 5px blue;        /*firefox*/
+    -ms-box-shadow: 2px 2px 5px blue inset,2px 2px 5px blue;         /*IE*/
+    -o-box-shadow: 2px 2px 5px blue inset,2px 2px 5px blue;          /*opera*/
+    /*渐变色样式*/
+    background:linear-gradient(to top left,#ffbb00,#ffcc22,#ffdd55,#ffee99);
+    -webkit-background:linear-gradient(to top left,#ffbb00,#ffcc22,#ffdd55,#ffee99);     /*chrome和safari*/
+    -moz-background:linear-gradient(to top left,#ffbb00,#ffcc22,#ffdd55,#ffee99);       /*firefox*/
+    -ms-background:linear-gradient(to top left,#ffbb00,#ffcc22,#ffdd55,#ffee99);        /*IE*/
+    -o-background:linear-gradient(to top left,#ffbb00,#ffcc22,#ffdd55,#ffee99);         /*opera*/
+}
+#tab div{
+    /*float: right;*/
+    margin: 0px 0px 0px 110px;
+    padding:10px 20px 10px 20px;
+    /*设置边框样式*/
+    border:1px solid #ccc;
+    /*圆角边框*/
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;     /*chrome and safari*/
+    -moz-border-radius: 10px 10px 10px 10px;        /*firefox*/
+    -ms-border-radius: 10px 10px 10px 10px;         /*IE*/
+    -o-border-radius: 10px 10px 10px 10px;          /*opera*/
+    /*边框阴影*/
+    box-shadow: 2px 2px 5px blue inset,2px 2px 5px blue;
+    -webkit-box-shadow: 2px 2px 5px blue inset,2px 2px 5px blue;     /*chrome and safari*/
+    -moz-box-shadow: 2px 2px 5px blue inset,2px 2px 5px blue;        /*firefox*/
+    -ms-box-shadow: 2px 2px 5px blue inset,2px 2px 5px blue;         /*IE*/
+    -o-box-shadow: 2px 2px 5px blue inset,2px 2px 5px blue;          /*opera*/
+    line-height: 1.5;
+
+}
+
+.hide{
+    display:none;
+}
+

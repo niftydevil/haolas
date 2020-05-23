@@ -1,0 +1,88 @@
+@CHARSET "UTF-8";
+/*清除样式*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*设置网页居中，但是不能使用float和position属性*/
+.wrap{
+    width:1000px;
+    margin: 0 auto;
+}
+
+/*设置背景图片区域的样式，使用posiotin定位，z-index属性*/
+.background{
+    /*position: relative;*/
+    width: 1000px;
+    /*z-index: -1;*/
+    /* for IE */
+    filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.3;    /*设置背景图片透明度*/
+}
+/*设置背景图片的大小*/
+.background img{
+    width: 1000px;
+    height: 600px;
+    margin: 20px 0px 0px 0px;
+}
+
+/*设置content位置定位，使其下面的子元素按照此元素定位*/
+.content{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    margin-top: -600px;
+}
+/*设置内容区域，二维码放置位置*/
+.qr1{
+    position: absolute;
+    left: 80px;
+    top:30px;
+}
+.qr2{
+    position: absolute;
+    right: 80px;
+    bottom:25px;
+}
+
+/*设置二维码图片的大小*/
+.picture1{
+    width: 200px;
+    height: 200px;
+}
+.picture2{
+    width: 200px;
+    height: 200px;
+}
+
+/*设置文字的位置*/
+.content1{
+    position: absolute;
+    left:310px;
+    top:70px;
+    /*设置文字样式*/
+    font-family: "幼圆";
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px 5px red;
+    -webkit-text-shadow: 2px 2px 5px red;     /*chrome and safari*/
+    -moz-text-shadow: 2px 2px 5px red;        /*firefox*/
+    -ms-text-shadow: 2px 2px 5px red;         /*IE*/
+    -o-text-shadow: 2px 2px 5px red;          /*opera*/
+}
+.content2{
+    position: absolute;
+    right: 310px;
+    bottom: 80px;
+    /*设置文字样式*/
+    font-family: "幼圆";
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px 5px red;
+    -webkit-text-shadow: 2px 2px 5px red;     /*chrome and safari*/
+    -moz-text-shadow: 2px 2px 5px red;        /*firefox*/
+    -ms-text-shadow: 2px 2px 5px red;         /*IE*/
+    -o-text-shadow: 2px 2px 5px red;          /*opera*/
+}

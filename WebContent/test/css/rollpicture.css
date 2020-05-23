@@ -1,0 +1,74 @@
+@CHARSET "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+a,img {
+    border: 0;
+}
+
+#focus_Box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /*margin: 0px auto;*/
+    margin-bottom: 80px;
+}
+
+#focus_Box ul {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+#focus_Box li {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    border-radius: 6px;
+    /*box-shadow: 1px 1px 12px rgba(200, 200, 200, 0)*/
+}
+
+#focus_Box img {
+    margin-left: 60px;     /*使图片居中对齐*/
+    width: 100%;
+    height: 100%;
+    background: url(images/RollPicture/loading.gif) no-repeat center 50%;
+    vertical-align: text-top;   /*垂直对齐图片*/
+    border: solid #000000;
+}
+
+#focus_Box .prev, #focus_Box .next {
+    display: block;
+    z-index: 100;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 131px;
+}
+
+#focus_Box .prev {
+    background: url(images/RollPicture/btn.jpg) left bottom no-repeat;
+    left: 30px
+}
+
+#focus_Box .next {
+    background: url(images/RollPicture/btn.jpg) right bottom no-repeat;
+    left: 30px
+}
+
+#focus_Box .prev:hover {
+    background-position: left top;
+}
+
+#focus_Box .next:hover {
+    background-position: right top;
+}
